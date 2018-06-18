@@ -8,8 +8,9 @@ script:
      - cd dsl-n12e-c1_gpl
      - sudo mkdir /opt/trendchip
      - sudo tar -zxvf ./toolchain/mips-linux-uclibc.tgz -C /opt/trendchip/
+     - sudo chmod +x /opt/trendchip/*
      - export PROFILE=dsl-n12e-c1
-     - make
+     - sudo make
 addons:
   apt:
     packages:
