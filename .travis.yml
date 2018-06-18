@@ -4,12 +4,17 @@ language: bash
 script: 
      - wget http://dlcdnet.asus.com/pub/ASUS/wireless/DSL-N12E_C1/GPL_DSL-N12E_C1_1123473.zip
      - unzip GPL_DSL-N12E_C1_1123473.zip
+     - tar -xzf GPL_DSL-N12E_C1_1123473.tgz
+     - cd dsl-n12e-c1_gpl
+     - sudo tar -zxvf ./toolchain/mips-linux-uclibc.tgz -C /opt/trendchip/
+     - export PROFILE=dsl-n12e-c1
+     - make
 addons:
   apt:
     packages:
     - build-essential
-	  - bison
-	  - flex
-	  - gawk
-	  - dos2unix
-	  - libstdc++5
+    - bison
+    - flex
+    - gawk
+    - dos2unix
+    - libstdc++5
