@@ -6,6 +6,7 @@ script:
      - unzip GPL_DSL-N12E_C1_1123473.zip
      - tar -xzf GPL_DSL-N12E_C1_1123473.tgz
      - cd dsl-n12e-c1_gpl
+     - sudo mkdir /opt/trendchip
      - sudo tar -zxvf ./toolchain/mips-linux-uclibc.tgz -C /opt/trendchip/
      - export PROFILE=dsl-n12e-c1
      - make
