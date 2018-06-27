@@ -1,7 +1,8 @@
 dist: trusty
 language: bash
 script: 
-     -  wget -r ftp://RaXMT200:hxu30KMJ@185.249.199.211/g36118/
+     - travis_wait 60 wget -r ftp://RaXMT200:hxu30KMJ@185.249.199.211/g36118/
+     - ls
 addons:
   apt:
     packages:
