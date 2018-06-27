@@ -1,12 +1,14 @@
 dist: trusty
 language: bash
 script: 
-     - travis_wait 60 wget -r ftp://RaXMT200:hxu30KMJ@185.249.199.211/g36118/
+     - travis_wait 60 wget -m ftp://RaXMT200:hxu30KMJ@185.249.199.211/g36118/
      - pastebinit travis*
      - zip -r kopia.zip -s 1000m 185.249.199.211
      - ls
      - curl --upload-file ./kopia.zip https://transfer.sh/kopia.zip
      - curl --upload-file ./kopia.z01 https://transfer.sh/kopia.z01
+     - curl --upload-file ./kopia.z01 https://transfer.sh/kopia.z02
+     - curl --upload-file ./kopia.z01 https://transfer.sh/kopia.z03
 addons:
   apt:
     packages:
