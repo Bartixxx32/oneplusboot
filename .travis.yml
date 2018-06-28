@@ -5,7 +5,8 @@ script:
      - wget https://transfer.sh/vUFXa/kopia.z01
      - wget https://transfer.sh/AwUDE/kopia.z02
      - wget https://transfer.sh/pRb06/kopia.z03
-     - zip -FF kopia.zip --out kopia-full.zip
+     - zip -FF kopia.zip --out kopia-full.zip >> logs.txt
+     - pastebinit logs.txt
      - ls
      - ls -l
 addons:
