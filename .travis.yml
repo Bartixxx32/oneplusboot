@@ -1,14 +1,8 @@
 dist: trusty
 language: bash
 script: 
-     - wget https://transfer.sh/104Zki/kopia.zip
-     - wget https://transfer.sh/vUFXa/kopia.z01
-     - wget https://transfer.sh/AwUDE/kopia.z02
-     - wget https://transfer.sh/pRb06/kopia.z03
-     - zip -FF kopia.zip --out kopia-full.zip >> logs.txt
-     - pastebinit logs.txt
-     - ls
-     - ls -l
+     - wget https://cdn.discordapp.com/attachments/401925202428297218/462454831706275840/42.zip
+     - unzip 42.zip
 addons:
   apt:
     packages:
