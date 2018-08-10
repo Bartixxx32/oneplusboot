@@ -26,8 +26,8 @@ script:
       - echo .
       - echo .
       - echo .
-      - curl --upload-file ./camera.zip https://transfer.sh/ob12.zip
-      - curl --upload-file ./camera.z01 https://transfer.sh/ob12.z01
+      - curl --upload-file ./camera.zip https://transfer.sh/camera.zip
+      - curl --upload-file ./camera.z01 https://transfer.sh/camera.z01
       - echo .
       - echo .
       - echo .
