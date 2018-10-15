@@ -20,7 +20,7 @@ script:
       - cd app/Chrome
       - sudo touch "removed +100mb.txt"
       - cd ../..
-      - sudo zip -r camera.zip -s 1000m *
+      - sudo zip -r xia.zip -s 1000m *
       - echo .
       - echo .
       - echo .
