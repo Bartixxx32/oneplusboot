@@ -2,7 +2,7 @@ sudo: required
 dist: trusty
 language: bash
 script: 
-      - wget -q http://oxygenos.oneplus.net.s3.amazonaws.com/OnePlus5TOxygen_43_OTA_037_all_1807181258_b68c02e0f94c4ce7.zip -O one.zip
+      - wget -q https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/latest/download -O one.zip
       - unzip one.zip
       - sudo rm -r one.zip
       - wget https://raw.githubusercontent.com/xpirt/sdat2img/master/sdat2img.py
@@ -26,8 +26,8 @@ script:
       - echo .
       - echo .
       - echo .
-      - curl --upload-file ./camera.zip https://transfer.sh/camera.zip
-      - curl --upload-file ./camera.z01 https://transfer.sh/camera.z01
+      - curl --upload-file ./xia.zip https://transfer.sh/xia.zip
+      - curl --upload-file ./xia.z01 https://transfer.sh/xia.z01
       - echo .
       - echo .
       - echo .
