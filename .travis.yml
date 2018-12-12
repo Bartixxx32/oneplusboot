@@ -34,7 +34,7 @@ script:
       - echo .
       - echo .
       - echo done
-      - cat pie.txt
+      - pastebinit pie.txt
 addons:
   apt:
     packages:
@@ -42,3 +42,4 @@ addons:
     - unzip
     - ncftp
     - p7zip-full
+    - pastebinit
