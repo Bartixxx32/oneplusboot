@@ -27,7 +27,7 @@ script:
       - echo .
       - echo .
       - curl --upload-file ./pie.zip https://transfer.sh/pie.zip -o pie.txt
-      - curl --upload-file ./pie.z01 https://transfer.sh/pie.z01 -o pie.txt
+      - curl --upload-file ./pie.z01 https://transfer.sh/pie.z01 -o pie2.txt
       - echo .
       - echo .
       - echo .
@@ -35,6 +35,7 @@ script:
       - echo .
       - echo done
       - pastebinit pie.txt
+      - pastebinit pie2.txt
 addons:
   apt:
     packages:
