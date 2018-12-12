@@ -26,14 +26,15 @@ script:
       - echo .
       - echo .
       - echo .
-      - curl --upload-file ./pie.zip https://transfer.sh/pie.zip
-      - curl --upload-file ./pie.z01 https://transfer.sh/pie.z01
+      - curl --upload-file ./pie.zip https://transfer.sh/pie.zip -o pie.txt
+      - curl --upload-file ./pie.z01 https://transfer.sh/pie.z01 -o pie.txt
       - echo .
       - echo .
       - echo .
       - echo .
       - echo .
       - echo done
+      - cat pie.txt
 addons:
   apt:
     packages:
