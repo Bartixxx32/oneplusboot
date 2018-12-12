@@ -2,7 +2,7 @@ sudo: required
 dist: trusty
 language: bash
 script: 
-      - wget -q https://sourceforge.net/projects/xiaomi-eu-multilang-miui-roms/files/latest/download -O one.zip
+      - wget -q https://otafsg.h2os.com/patch/amazone2/GLO/OnePlus5TOxygen/OnePlus5TOxygen_43.T.26_GLO_026_1812052331/OnePlus5TOxygen_43_OTA_026_all_1812052331_d9e594c.zip -O one.zip
       - unzip one.zip
       - sudo rm -r one.zip
       - wget https://raw.githubusercontent.com/xpirt/sdat2img/master/sdat2img.py
@@ -20,14 +20,14 @@ script:
       - cd app/Chrome
       - sudo touch "removed +100mb.txt"
       - cd ../..
-      - sudo zip -r xia.zip -s 1000m *
+      - sudo zip -r pie.zip -s 1000m *
       - echo .
       - echo .
       - echo .
       - echo .
       - echo .
-      - curl --upload-file ./xia.zip https://transfer.sh/xia.zip
-      - curl --upload-file ./xia.z01 https://transfer.sh/xia.z01
+      - curl --upload-file ./pie.zip https://transfer.sh/pie.zip
+      - curl --upload-file ./pie.z01 https://transfer.sh/pie.z01
       - echo .
       - echo .
       - echo .
